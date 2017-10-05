@@ -6,7 +6,7 @@ function getIt() {
 
 function frameIt() {
   $('img').on('load', function() {
-    $('img').addClass('tasty'); 
+    $('img').addClass('tasty');
   })
 }
 
@@ -15,6 +15,12 @@ function pressIt() {
     if (key.which === 71) {
       window.alert("You have pressed G"); 
     }
+  })
+}
+
+function submitIt() {
+  $('form').on('submit', function() {
+    window.alert("Your form is going to be submitted now."); 
   })
 }
 
