@@ -1,6 +1,6 @@
 function getIt() {
   $('p').on('click', function() {
-    alert("Hey!"); 
+    alert("Hey!");
   })
 }
 
@@ -11,7 +11,11 @@ function frameIt() {
 }
 
 function pressIt() {
-  
+  $('input').on('keydown', function() {
+    if (key.which === 71) {
+      window.alert("You have pressed G"); 
+    }
+  })
 }
 
 $(document).ready(function(){
